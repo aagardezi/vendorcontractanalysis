@@ -91,8 +91,8 @@ Analyse the entire contract before producing results"""
 @functions_framework.cloud_event
 def hello_gcs(cloud_event):
     #This is what you need to set
-    project_id = "genaillentsearch"
-    DATASET_ID = "pershing"
+    project_id = "############"
+    DATASET_ID = "############"
     TABLE_ID = "vendorcontract"
 
     
