@@ -1,0 +1,57 @@
+{
+    "type": "OBJECT",
+    "properties": {
+        "vendor_name": {
+            "type": "STRING"
+        },
+        "contract_title": {
+            "type": "STRING"
+        },
+        "risks": {
+            "type": "ARRAY",
+            "items": {
+                "type": "OBJECT",
+                "properties": {
+                    "risk_title": {
+                        "type": "STRING"
+                    },
+                    "location_in_file": {
+                        "type": "OBJECT",
+                        "properties": {
+                            "description": {
+                                "type": "STRING"
+                            },
+                            "page_number": {
+                                "type": "NUMBER"
+                            },
+                            "line_number": {
+                                "type": "NUMBER"
+                            }
+                        }
+                    },
+                    "clause_analysis": {
+                        "type": "STRING"
+                    },
+                    "implication_for_client": {
+                        "type": "STRING"
+                    },
+                    "recommendation": {
+                        "type": "STRING"
+                    }
+                },
+                "required": [
+                    "risk_title",
+                    "location_in_file",
+                    "clause_analysis",
+                    "implication_for_client",
+                    "recommendation"
+                ]
+            }
+        }
+    },
+    "required": [
+        "vendor_name",
+        "contract_title",
+        "risks"
+    ]
+}
