@@ -8,7 +8,7 @@ from datetime import datetime, timezone
 from dateutil import parser
 
 PROJECT_ID = "genaillentsearch"
-DATASET_ID = "pershing"
+DATASET_ID = "###########"
 TABLE_ID = "vendorcontract"
 LOCATION = "gloabl"
 
@@ -23,7 +23,7 @@ def generate(bucketname, filename):
       file_uri=f"""gs://{bucketname}/{filename}""",
       mime_type="application/pdf",
   )
-  si_text1 = """You are an agent in the financial team for Pershing Square. You are analysing contracts to and extracting key fields:
+  si_text1 = """You are an agent in the financial team for financial institution. You are analysing contracts to and extracting key fields:
 Customer Name: 
 VendorName: 
 ContractTitle: 
